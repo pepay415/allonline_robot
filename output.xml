@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.8 on darwin)" generated="2025-01-26T00:38:07.723012" rpa="false" schemaversion="5">
+<suite id="s1" name="Homeworkgroup4" source="/Users/paanpun/Documents/robotframwork_workshop/allonline/homeworkgroup4.robot">
+<test id="s1-t1" name="ลูกค้าสั่งซื้อสินค้าสำเร็จด้วย QR Payment" line="11">
+<kw name="open web browser to shoppingmall" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:07.806078" level="INFO">Opening browser 'chrome' to base url 'https://www.allonline.7eleven.co.th'.</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-26T00:38:07.805952" elapsed="2.605384"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:38:07.805658" elapsed="2.605912"/>
+</kw>
+<kw name="เข้าสู่ระบบ7-11">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:10.412354" level="INFO">Clicking element 'xpath://*[@id="page"]/header/div[4]/div/div/div/ul/li[4]'.</msg>
+<arg>xpath://*[@id="page"]/header/div[4]/div/div/div/ul/li[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:10.412128" elapsed="0.698351"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:11.110774" level="INFO">Typing text 'yukiza_hahahaha@hotmail.com' into text field 'xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[4]/input'.</msg>
+<arg>xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[4]/input</arg>
+<arg>yukiza_hahahaha@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:11.110602" elapsed="0.108948"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:11.219788" level="INFO">Typing text 'yukiza12345' into text field 'xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[5]/input'.</msg>
+<arg>xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[5]/input</arg>
+<arg>yukiza12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:11.219673" elapsed="0.039285"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:11.259235" level="INFO">Clicking element 'xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[6]/a[1]'.</msg>
+<arg>xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[6]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:11.259101" elapsed="0.045651"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://*[@id="login-dropdown"]/span[1]</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-26T00:38:11.304889" elapsed="6.734010"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:18.329313" level="INFO">Element 'xpath://*[@id="login-dropdown"]/span[1]' contains text 'ปุณยวีร์ ทองกลัด'.</msg>
+<arg>xpath://*[@id="login-dropdown"]/span[1]</arg>
+<arg>ปุณยวีร์ ทองกลัด</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-01-26T00:38:18.039006" elapsed="0.290368"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:38:10.411907" elapsed="7.917534"/>
+</kw>
+<kw name="ค้นหาสินค้าด้วยชื่อสินค้า">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:18.329853" level="INFO">Typing text 'CCPets กล่องไม้ กระดาษข่วน รูปปลา SC592N' into text field 'xpath://*[@id="search_id_form"]/div/div[1]/input'.</msg>
+<arg>xpath://*[@id="search_id_form"]/div/div[1]/input</arg>
+<arg>${search}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:18.329739" elapsed="0.101069"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:18.431046" level="INFO">Clicking element 'xpath://*[@id="search_id_form"]/div/span'.</msg>
+<arg>xpath://*[@id="search_id_form"]/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:18.430932" elapsed="1.552862"/>
+</kw>
+<arg>CCPets กล่องไม้ กระดาษข่วน รูปปลา SC592N</arg>
+<status status="PASS" start="2025-01-26T00:38:18.329583" elapsed="1.654299"/>
+</kw>
+<kw name="ตรวจสอบผลการค้นหา">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:20.014321" level="INFO">Element 'xpath://*[@id="page"]/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/div[1]' contains text 'CCPets กล่องไม้ กระดาษข่วน รูปปลา SC592N'.</msg>
+<arg>xpath://*[@id="page"]/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/div[1]</arg>
+<arg>CCPets กล่องไม้ กระดาษข่วน รูปปลา SC592N</arg>
+<arg>399.00</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-01-26T00:38:19.984742" elapsed="0.029634"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:38:19.984239" elapsed="0.030195"/>
+</kw>
+<kw name="เลือกดูสินค้า">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:20.014808" level="INFO">Clicking element 'xpath://*[@id="page"]/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/div[1]'.</msg>
+<arg>xpath://*[@id="page"]/div[2]/div[2]/div/div/div[2]/div/div/div/div/div/div[3]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:20.014717" elapsed="1.596975"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:38:20.014565" elapsed="1.597234"/>
+</kw>
+<kw name="เพิ่มสินค้าลงตะกร้า">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:21.612262" level="INFO">Clicking element 'xpath://*[@id="article-form"]/div[2]/div[2]/div[4]/div[1]/button'.</msg>
+<arg>xpath://*[@id="article-form"]/div[2]/div[2]/div[4]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:21.612145" elapsed="0.033019"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:38:21.611960" elapsed="0.033285"/>
+</kw>
+<kw name="ตรวจสอบสินค้าในตะกร้า">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:21.645859" level="INFO">Clicking element 'xpath://*[@id="mini-basket"]/a/i'.</msg>
+<arg>xpath://*[@id="mini-basket"]/a/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:21.645540" elapsed="0.031972"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:21.677758" level="INFO">Clicking element 'xpath://*[@id="mini-basket"]/a/i'.</msg>
+<arg>xpath://*[@id="mini-basket"]/a/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:21.677638" elapsed="0.419952"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:22.141805" level="INFO">Element 'xpath://*[@id="page"]/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/a' contains text 'CCPets กล่องไม้ กระดาษข่วน รูปปลา SC592N'.</msg>
+<arg>xpath://*[@id="page"]/div[2]/div[2]/div[2]/div/div[3]/div[1]/div[2]/a</arg>
+<arg>CCPets กล่องไม้ กระดาษข่วน รูปปลา SC592N</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-01-26T00:38:22.097711" elapsed="0.044202"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:22.142309" level="INFO">Clicking element 'xpath://*[@id="page"]/div[2]/div[2]/div[2]/div/div[3]/div[10]/div/div/div/a'.</msg>
+<arg>xpath://*[@id="page"]/div[2]/div[2]/div[2]/div/div[3]/div[10]/div/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:22.142186" elapsed="1.259559"/>
+</kw>
+<status status="PASS" start="2025-01-26T00:38:21.645394" elapsed="1.756451"/>
+</kw>
+<kw name="ใส่ที่อยู่จัดส่งสินค้า">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:23.402602" level="INFO">Clicking element 'xpath://*[@id="address-tabs"]/ul/li[2]/a'.</msg>
+<arg>xpath://*[@id="address-tabs"]/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:23.402398" elapsed="0.032988"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:23.435641" level="INFO">Clicking element 'xpath://*[@id="address"]/div[1]/div[2]'.</msg>
+<arg>xpath://*[@id="address"]/div[1]/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:23.435509" elapsed="0.028831"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:new-address-name</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-26T00:38:23.464446" elapsed="0.009023"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:23.473628" level="INFO">Clicking element 'id:new-address-name'.</msg>
+<arg>id:new-address-name</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:23.473547" elapsed="0.026150"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:23.499900" level="INFO">Typing text 'กาญจนา' into text field 'id:new-address-name'.</msg>
+<arg>id:new-address-name</arg>
+<arg>กาญจนา</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:23.499801" elapsed="0.037243"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:23.537282" level="INFO">Typing text 'มงคล' into text field 'xpath://*[@id="new-address-lastname"]'.</msg>
+<arg>xpath://*[@id="new-address-lastname"]</arg>
+<arg>มงคล</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:23.537159" elapsed="0.031503"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:23.568905" level="INFO">Typing text '0903958789' into text field 'xpath://*[@id="new-address-mobile"]'.</msg>
+<arg>xpath://*[@id="new-address-mobile"]</arg>
+<arg>0903958789</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:23.568780" elapsed="0.035158"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:23.604154" level="INFO">Typing text '56/89 ซ.สามเสน' into text field 'xpath://*[@id="new-address-addrno"]'.</msg>
+<arg>xpath://*[@id="new-address-addrno"]</arg>
+<arg>56/89 ซ.สามเสน</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-26T00:38:23.604041" elapsed="0.040048"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-01-26T00:38:23.644345" level="INFO">Selecting options from selection list 'id:new-address-province' by value กรุงเทพ.</msg>
+<msg time="2025-01-26T00:38:23.768504" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-26T00:38:23.768740" level="FAIL">NoSuchElementException: Message: Cannot locate option with value: กรุงเทพ; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+</msg>
+<arg>id:new-address-province</arg>
+<arg>กรุงเทพ</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2025-01-26T00:38:23.644229" elapsed="0.126872">NoSuchElementException: Message: Cannot locate option with value: กรุงเทพ; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+</status>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>id:new-address-district</arg>
+<arg>ดุสิต</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.771279" elapsed="0.000087"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>id:new-address-sub-district</arg>
+<arg>ดุสิต</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.771447" elapsed="0.000014"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:gcp-map</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.771503" elapsed="0.000010"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:selected-location</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.771545" elapsed="0.000007"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>id:selected-location</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.771581" elapsed="0.000008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.771709" elapsed="0.000520"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id:selected-location</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.773155" elapsed="0.000050"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:def-locate</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.775208" elapsed="0.000035"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath://*[@id="conf-dif-addr"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-26T00:38:23.775318" elapsed="0.000011"/>
+</kw>
+<status status="FAIL" start="2025-01-26T00:38:23.402172" elapsed="0.373904">NoSuchElementException: Message: Cannot locate option with value: กรุงเทพ; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+</status>
+</kw>
+<kw name="ตรวจสอบค่าจัดส่ง">
+<status status="NOT RUN" start="2025-01-26T00:38:23.776519" elapsed="0.000028"/>
+</kw>
+<kw name="เลือกวิธีการชำระเงินแบบ QR Payment">
+<status status="NOT RUN" start="2025-01-26T00:38:23.777411" elapsed="0.000061"/>
+</kw>
+<kw name="ยืนยันคำสั่งซื้อ">
+<status status="NOT RUN" start="2025-01-26T00:38:23.777722" elapsed="0.000020"/>
+</kw>
+<doc>ทดสอบการสั่งซื้อสินค้าสำเร็จโดยใช้ QR Payment</doc>
+<status status="FAIL" start="2025-01-26T00:38:07.804791" elapsed="15.973063">NoSuchElementException: Message: Cannot locate option with value: กรุงเทพ; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+</status>
+</test>
+<status status="FAIL" start="2025-01-26T00:38:07.723524" elapsed="16.054720"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Homeworkgroup4">Homeworkgroup4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
