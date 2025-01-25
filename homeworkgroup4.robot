@@ -30,8 +30,8 @@ open web browser to shoppingmall
 
 เข้าสู่ระบบ7-11
     Click Element    xpath://*[@id="page"]/header/div[4]/div/div/div/ul/li[4]
-    Input Text    xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[4]/input    yukiza_hahahaha@hotmail.com
-    Input Text    xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[5]/input    yukiza12345
+    Input Text    xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[4]/input    youraccount@hotmail.com
+    Input Text    xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[5]/input    yourpassword
     Click Element    xpath://*[@id="__next"]/div/div/div[2]/div[2]/div/div/div/div[6]/a[1]
     Wait Until Element Is Visible    xpath://*[@id="login-dropdown"]/span[1]    timeout=10  
     Element Should Contain    xpath://*[@id="login-dropdown"]/span[1]    ปุณยวีร์ ทองกลัด
